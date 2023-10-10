@@ -16,5 +16,13 @@ namespace TempleManagement
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+           if( MessageBox.Show("Are You Sure To Close","EXIT",MessageBoxButtons.OKCancel,MessageBoxIcon.Exclamation)==DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
