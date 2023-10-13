@@ -52,6 +52,10 @@ namespace TempleManagement
             if (dt.Rows.Count == 1)
             {
                 MessageBox.Show("welcome");
+                Home hfrm = new Home();
+                this.Hide();
+                hfrm.Show();
+
             }
             else
             {
